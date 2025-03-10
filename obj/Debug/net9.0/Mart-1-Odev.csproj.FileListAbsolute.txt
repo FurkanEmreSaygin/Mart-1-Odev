@@ -1,0 +1,15 @@
+C:\Users\furky\Desktop\Acun Ödev\Mart-1-Odev\bin\Debug\net9.0\Mart-1-Odev.exe
+C:\Users\furky\Desktop\Acun Ödev\Mart-1-Odev\bin\Debug\net9.0\Mart-1-Odev.deps.json
+C:\Users\furky\Desktop\Acun Ödev\Mart-1-Odev\bin\Debug\net9.0\Mart-1-Odev.runtimeconfig.json
+C:\Users\furky\Desktop\Acun Ödev\Mart-1-Odev\bin\Debug\net9.0\Mart-1-Odev.dll
+C:\Users\furky\Desktop\Acun Ödev\Mart-1-Odev\bin\Debug\net9.0\Mart-1-Odev.pdb
+C:\Users\furky\Desktop\Acun Ödev\Mart-1-Odev\obj\Debug\net9.0\Mart-1-Odev.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\furky\Desktop\Acun Ödev\Mart-1-Odev\obj\Debug\net9.0\Mart-1-Odev.AssemblyInfoInputs.cache
+C:\Users\furky\Desktop\Acun Ödev\Mart-1-Odev\obj\Debug\net9.0\Mart-1-Odev.AssemblyInfo.cs
+C:\Users\furky\Desktop\Acun Ödev\Mart-1-Odev\obj\Debug\net9.0\Mart-1-Odev.csproj.CoreCompileInputs.cache
+C:\Users\furky\Desktop\Acun Ödev\Mart-1-Odev\obj\Debug\net9.0\Mart-1-Odev.sourcelink.json
+C:\Users\furky\Desktop\Acun Ödev\Mart-1-Odev\obj\Debug\net9.0\Mart-1-Odev.dll
+C:\Users\furky\Desktop\Acun Ödev\Mart-1-Odev\obj\Debug\net9.0\refint\Mart-1-Odev.dll
+C:\Users\furky\Desktop\Acun Ödev\Mart-1-Odev\obj\Debug\net9.0\Mart-1-Odev.pdb
+C:\Users\furky\Desktop\Acun Ödev\Mart-1-Odev\obj\Debug\net9.0\Mart-1-Odev.genruntimeconfig.cache
+C:\Users\furky\Desktop\Acun Ödev\Mart-1-Odev\obj\Debug\net9.0\ref\Mart-1-Odev.dll
