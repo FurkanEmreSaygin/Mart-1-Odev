@@ -126,6 +126,33 @@ namespace Eticaret
         Console.WriteLine($"- {product.Name} ({product.Type})");
         }
     }
+        public void MakePayment()
+        {
+            Console.WriteLine("Select Payment Method:");
+            Console.WriteLine("1. Bank Transfer");
+            Console.WriteLine("2. Credit Card");
+            int choice = Convert.ToInt32(Console.ReadLine());
 
+            Console.Write("Enter Amount: ");
+            decimal amount = Convert.ToDecimal(Console.ReadLine());
+
+            PaymentMethod paymentMethod;
+
+            if (choice == 1)
+            {
+                paymentMethod = new BankTransferPayment();
+            }
+                else if (choice == 2)
+            {
+                paymentMethod = new CreditCardPayment();
+            }
+            else
+            {
+                Console.WriteLine("Invalid choice.");
+                return;
+            }
+
+            paymentMethod.ProcessPayment(amount);
+        }
     }
 }

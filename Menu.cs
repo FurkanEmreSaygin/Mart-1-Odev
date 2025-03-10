@@ -119,9 +119,10 @@ namespace Eticaret
                 {
                     Console.WriteLine("-----------------------------");
                     Console.WriteLine("      1.Show Products");
-                    Console.WriteLine("      2.Buy Product");
+                    Console.WriteLine("      2.Add Product to Cart");
                     Console.WriteLine("      3.Show Cart");
-                    Console.WriteLine("      4.Exit");
+                    console.WriteLine("      4.Payments");
+                    Console.WriteLine("      5.Exit");
                     Console.WriteLine("-----------------------------");
                     string choice3 = Console.ReadLine();
                     if (choice3 == "1")
@@ -137,6 +138,10 @@ namespace Eticaret
                         controllers.ShowCart();
                     }
                     else if (choice3 == "4")
+                    {
+                        controllers.MakePayment();
+                    }
+                    else if (choice3 == "5")
                     {
                         break;
                     }
