@@ -12,6 +12,8 @@ namespace Eticaret
         
         List<Customer> users = new List<Customer>();
         List<Seller> user = new List<Seller>();
+        List<Product> cart = new List<Product>();
+        List<Product> productList = new List<Product>();
         public void AddUser(string name, string email, string password, int age)
         {
             Customer customer = new Customer(name, email, password, 1, age);
@@ -65,7 +67,7 @@ namespace Eticaret
                 return 0;
             }
         }
-        List<Product> productList = new List<Product>();
+        
 
         public void AddProduct()
         {
@@ -97,7 +99,6 @@ namespace Eticaret
             }
         }
     }
-        List<Product> cart = new List<Product>();
 
         public void AddToCart()
         {
@@ -109,7 +110,7 @@ namespace Eticaret
             if (product != null)
             {
             cart.Add(product);
-            product.Stock--; // Stok azaltılıyor
+            product.Stock--; 
             Console.WriteLine($"{product.Name} added to cart.");
         }
         else
@@ -117,13 +118,13 @@ namespace Eticaret
         Console.WriteLine("Product not available.");
         }
     }
-    public void ShowCart()
-    {
+        public void ShowCart()
+        {
         Console.WriteLine("Your Cart:");
         foreach (Product product in cart)
-    {
+        {
         Console.WriteLine($"- {product.Name} ({product.Type})");
-    }
+        }
     }
 
     }

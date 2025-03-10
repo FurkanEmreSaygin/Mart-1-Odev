@@ -9,7 +9,7 @@ namespace Eticaret
     public class Menu
     {  
         Controllers controllers = new Controllers();
-        SellerUi sellerUi = new SellerUi();
+    
         public int MenuProcess() {
             Console.WriteLine("-----------------------------");
             Console.WriteLine("      1.Customer");
@@ -120,7 +120,7 @@ namespace Eticaret
                     Console.WriteLine("-----------------------------");
                     Console.WriteLine("      1.Show Products");
                     Console.WriteLine("      2.Buy Product");
-                    Console.WriteLine("      3.Cart");
+                    Console.WriteLine("      3.Show Cart");
                     Console.WriteLine("      4.Exit");
                     Console.WriteLine("-----------------------------");
                     string choice3 = Console.ReadLine();
