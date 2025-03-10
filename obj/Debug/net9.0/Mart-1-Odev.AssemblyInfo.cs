@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mart-1-Odev")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2a1e85ccd0ff96918f8e8439bd7d4e2899eedf6f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+854d70ace10b4a8398419e340b6a2ac966ba9ab4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mart-1-Odev")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mart-1-Odev")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

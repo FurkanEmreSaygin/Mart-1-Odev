@@ -36,7 +36,7 @@ namespace Eticaret
                 if (FoundCustomer != null)
                 {
                     Console.WriteLine("Login Successfull!!");
-                    return 1;
+                    return 10;
                 }
                 else
                 {
@@ -51,7 +51,7 @@ namespace Eticaret
                 if (FoundSeller != null)
                 {
                     Console.WriteLine("Login Successfull!!");
-                    return 1;
+                    return 15;
                 }
                 else
                 {
@@ -65,5 +65,66 @@ namespace Eticaret
                 return 0;
             }
         }
+        List<Product> productList = new List<Product>();
+
+        public void AddProduct()
+        {
+        Console.WriteLine("Add a Product");
+        Console.Write("Product Name: ");
+        string name = Console.ReadLine();
+
+        Console.Write("Product Type: ");
+        string type = Console.ReadLine();
+
+        Console.Write("Stock Quantity: ");
+        int stock = Convert.ToInt32(Console.ReadLine());
+
+        // Yeni ürünü oluştur ve listeye ekle
+        Product newProduct = new Product(name, type, stock);
+        productList.Add(newProduct);
+
+        Console.WriteLine("Product added successfully!");
+        }
+        
+        public void ShowProducts()
+        {
+        Console.WriteLine("Available Products:");
+        foreach (Product product in productList)
+        {
+            if (product.Stock > 0) // Stoğu 0 olan ürünler gösterilmeyecek
+            {
+                Console.WriteLine($"Name: {product.Name}, Type: {product.Type}, Stock: {product.Stock}");
+            }
+        }
+    }
+        List<Product> cart = new List<Product>();
+
+        public void AddToCart()
+        {
+            Console.Write("Enter Product Name to Add to Cart: ");
+            string selectedProduct = Console.ReadLine();
+
+            Product product = productList.FirstOrDefault(p => p.Name == selectedProduct && p.Stock > 0);
+
+            if (product != null)
+            {
+            cart.Add(product);
+            product.Stock--; // Stok azaltılıyor
+            Console.WriteLine($"{product.Name} added to cart.");
+        }
+        else
+        {
+        Console.WriteLine("Product not available.");
+        }
+    }
+    public void ShowCart()
+    {
+        Console.WriteLine("Your Cart:");
+        foreach (Product product in cart)
+    {
+        Console.WriteLine($"- {product.Name} ({product.Type})");
+    }
+    }
+
     }
 }

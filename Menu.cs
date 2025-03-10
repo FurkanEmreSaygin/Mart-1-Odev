@@ -9,6 +9,7 @@ namespace Eticaret
     public class Menu
     {  
         Controllers controllers = new Controllers();
+        SellerUi sellerUi = new SellerUi();
         public int MenuProcess() {
             Console.WriteLine("-----------------------------");
             Console.WriteLine("      1.Customer");
@@ -79,6 +80,77 @@ namespace Eticaret
             {
                 l = controllers.CheckUser(email, password, 2);
             }
+            else
+            {
+                l = 0;
+            }
+            
+            if (l == 15)
+            {
+                while (true)
+                {
+                    Console.WriteLine("-----------------------------");
+                    Console.WriteLine("      1.Add Product");
+                    Console.WriteLine("      2.Show Products");
+                    Console.WriteLine("      3.Exit");
+                    Console.WriteLine("-----------------------------");
+                    string choice3 = Console.ReadLine();
+                    if (choice3 == "1")
+                    {
+                        controllers.AddProduct();
+                    }
+                    else if (choice3 == "2")
+                    {
+                        controllers.ShowProducts();
+                    }
+                    else if (choice3 == "3")
+                    {
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Try Again!!");
+                    }
+                }
+            }
+            else if (l == 10)
+            {
+                while (true)
+                {
+                    Console.WriteLine("-----------------------------");
+                    Console.WriteLine("      1.Show Products");
+                    Console.WriteLine("      2.Buy Product");
+                    Console.WriteLine("      3.Cart");
+                    Console.WriteLine("      4.Exit");
+                    Console.WriteLine("-----------------------------");
+                    string choice3 = Console.ReadLine();
+                    if (choice3 == "1")
+                    {
+                        controllers.ShowProducts();
+                    }
+                    else if (choice3 == "2")
+                    {
+                        controllers.AddToCart();
+                    }
+                    else if (choice3 == "3")
+                    {
+                        controllers.ShowCart();
+                    }
+                    else if (choice3 == "4")
+                    {
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Try Again!!");
+                    }
+                }
+            }
+            else
+            {
+                Console.WriteLine("Try Again!!");
+            }
+
 
         }
         public int UserChoiceProcess()
